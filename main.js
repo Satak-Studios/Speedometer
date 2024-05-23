@@ -22,8 +22,9 @@ function showPositionNew(position) {
 }
 
 function CalcSpeed(){
+    document.getElementById('coord').innerHTML = "x: " + x + ", y: " + y + "<br>a: " + a + ", b: " + b;
     _dist = Math.sqrt((x-a)*(x-a) + (y-b)*(y-b));
     document.getElementById('dist').innerHTML = "Distance : " + _dist;
     _speed = _dist/10;
-    document.getElementById('speed').innerHTML = _speed + "m/s";
+    document.getElementById('speed').innerHTML = _speed + "Units";
 }
