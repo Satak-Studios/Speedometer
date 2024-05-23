@@ -2,12 +2,12 @@ var x, y, a, b, _dist, _speed = 0;
 
 function getFirstPos(){
     navigator.geolocation.getCurrentPosition(showPositionOld);
-    setInterval(getSecondPos, 1000);
+    setInterval(getSecondPos, 10000);
 }
 
 function getSecondPos(){
     navigator.geolocation.getCurrentPosition(showPositionNew);
-    setInterval(getFirstPos, 1000);
+    setInterval(getFirstPos, 10000);
 }
 
 function showPositionOld(position) {
